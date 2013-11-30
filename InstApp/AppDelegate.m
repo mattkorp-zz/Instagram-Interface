@@ -7,15 +7,37 @@
 //
 
 #import "AppDelegate.h"
+#import "PopularMediaViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // initialize with window
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    // create a view controller to overlay on the window
+    //UIViewController *vc = [[UIViewController alloc] init];
+    
+    // Subclass of UIViewController, inherits methods and properties
+    // now setting background color in .h file
+    PopularMediaViewController *vc = [[PopularMediaViewController alloc] initWithNibName:@"PopularMediaViewController" bundle:nil];
+    
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self.window setRootViewController:nc];
+    
+    // make background color orange
+    // vc.view.backgroundColor = [UIColor orangeColor];
+    
+    // set the root view controller to the new vc
+    // [self.window setRootViewController:vc];
+    
+    
+    self.window.backgroundColor = [UIColor orangeColor];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

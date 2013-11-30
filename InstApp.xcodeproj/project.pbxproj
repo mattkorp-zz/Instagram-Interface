@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4600F3F9184257620087A762 /* PopularMediaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4600F3F7184257620087A762 /* PopularMediaViewController.xib */; };
+		4600F3FB18425DD80087A762 /* PopularMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4600F3F6184257620087A762 /* PopularMediaViewController.m */; };
+		4600F3FE18427EF30087A762 /* MediaManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4600F3FD18427EF30087A762 /* MediaManager.m */; };
+		4600F401184296830087A762 /* MediaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4600F400184296830087A762 /* MediaObject.m */; };
 		467E56F31841645500D4438A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467E56F21841645500D4438A /* Foundation.framework */; };
 		467E56F51841645500D4438A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467E56F41841645500D4438A /* CoreGraphics.framework */; };
 		467E56F71841645500D4438A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467E56F61841645500D4438A /* UIKit.framework */; };
@@ -32,6 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4600F3F5184257620087A762 /* PopularMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularMediaViewController.h; sourceTree = "<group>"; };
+		4600F3F6184257620087A762 /* PopularMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopularMediaViewController.m; sourceTree = "<group>"; };
+		4600F3F7184257620087A762 /* PopularMediaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopularMediaViewController.xib; sourceTree = "<group>"; };
+		4600F3FC18427EF30087A762 /* MediaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaManager.h; sourceTree = "<group>"; };
+		4600F3FD18427EF30087A762 /* MediaManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaManager.m; sourceTree = "<group>"; };
+		4600F3FF184296830087A762 /* MediaObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaObject.h; path = ../MediaObject.h; sourceTree = "<group>"; };
+		4600F400184296830087A762 /* MediaObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MediaObject.m; path = ../MediaObject.m; sourceTree = "<group>"; };
 		467E56EF1841645500D4438A /* InstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467E56F21841645500D4438A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		467E56F41841645500D4438A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +120,13 @@
 			children = (
 				467E57011841645500D4438A /* AppDelegate.h */,
 				467E57021841645500D4438A /* AppDelegate.m */,
+				4600F3F5184257620087A762 /* PopularMediaViewController.h */,
+				4600F3F6184257620087A762 /* PopularMediaViewController.m */,
+				4600F3F7184257620087A762 /* PopularMediaViewController.xib */,
+				4600F3FC18427EF30087A762 /* MediaManager.h */,
+				4600F3FD18427EF30087A762 /* MediaManager.m */,
+				4600F3FF184296830087A762 /* MediaObject.h */,
+				4600F400184296830087A762 /* MediaObject.m */,
 				467E57041841645500D4438A /* Images.xcassets */,
 				467E56F91841645500D4438A /* Supporting Files */,
 			);
@@ -219,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4600F3F9184257620087A762 /* PopularMediaViewController.xib in Resources */,
 				467E56FD1841645500D4438A /* InfoPlist.strings in Resources */,
 				467E57051841645500D4438A /* Images.xcassets in Resources */,
 			);
@@ -239,8 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4600F3FE18427EF30087A762 /* MediaManager.m in Sources */,
 				467E57031841645500D4438A /* AppDelegate.m in Sources */,
 				467E56FF1841645500D4438A /* main.m in Sources */,
+				4600F401184296830087A762 /* MediaObject.m in Sources */,
+				4600F3FB18425DD80087A762 /* PopularMediaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +465,7 @@
 				467E571D1841645600D4438A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		467E571E1841645600D4438A /* Build configuration list for PBXNativeTarget "InstAppTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +474,7 @@
 				467E57201841645600D4438A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
